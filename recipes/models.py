@@ -10,6 +10,7 @@ APPROVAL_STATUS = ((False, "Pending Approval"), (True, "Approved"))
 class Recipe(models.Model):
     recipe = models.BigAutoField(primary_key=True)
     title = models.CharField(max_length=200, blank=False)
+    slug = models.SlugField(max_length=200, unique=True)
     image = CloudinaryField('image', 'recipe_placeholder', blank=False)
     description = models.TextField(blank=False)
     serves = models.PositiveIntegerField(blank=False)
