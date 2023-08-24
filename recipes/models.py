@@ -10,23 +10,23 @@ APPROVAL_STATUS = ((False, "Pending Approval"), (True, "Approved"))
 class Recipe(models.Model):
     recipe = models.BigAutoField(primary_key=True)
     title = models.CharField(max_length=200, blank=False)
+    image = CloudinaryField('image', 'recipe_placeholder', blank=False)
     description = models.TextField(blank=False)
+    serves = models.PositiveIntegerField(blank=False)
+    calories = models.PositiveIntegerField(blank=False)
+    total_time = models.PositiveIntegerField(blank=False)
     ingredients = models.TextField(blank=False)
     instructions = models.TextField(blank=False)
-    total_time = models.PositiveIntegerField(blank=False)
-    serves = models.PositiveIntegerField(blank=False)
-    image = CloudinaryField('image', 'recipe_placeholder', blank=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     published_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    is_featured = models.BooleanField(default=False)
-    featured_image = CloudinaryField(
-        'image', default='landing_page_placeholder', blank=False)
-    featured_description = models.TextField(blank=False)
-    status = models.IntegerField(choices=RECIPE_STATUS, default=0)
     liked_by = models.ManyToManyField(
         User, blank=True, related_name='liked_recipes')
-    calories = models.PositiveIntegerField(blank=False)
+    is_featured = models.BooleanField(default=False)
+    featured_image = CloudinaryField(
+        'featured image', default='landing_page_placeholder', blank=False)
+    featured_description = models.TextField(blank=False)
+    status = models.IntegerField(choices=RECIPE_STATUS, default=0)
     is_approved = models.BooleanField(default=False)
 
     class Meta:
