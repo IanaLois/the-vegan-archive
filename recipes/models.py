@@ -22,10 +22,6 @@ class Recipe(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     liked_by = models.ManyToManyField(
         User, blank=True, related_name='liked_recipes')
-    is_featured = models.BooleanField(default=False)
-    featured_image = CloudinaryField(
-        'featured image', default='landing_page_placeholder', blank=False)
-    featured_description = models.TextField(blank=False)
     status = models.IntegerField(choices=RECIPE_STATUS, default=0)
     is_approved = models.BooleanField(default=False)
 
