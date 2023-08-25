@@ -86,22 +86,22 @@ body {
     z-index: 100;
 }
 
-.post-link {
+.recipe-link {
     text-decoration: none;
     color: #445261;
 }
 
-.post-link:hover,
+.recipe-link:hover,
 .page-link {
     color: #E84610;
 }
 
-.post-title {
+.recipe-title {
     margin-top: 20%;
     margin-left: 5%;
 }
 
-.post-subtitle {
+.recipe-subtitle {
     margin-left: 5%;
     color: lightgray;
 }

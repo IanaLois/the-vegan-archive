@@ -4,14 +4,14 @@
   <div class="container">
     <div class="row g-0">
       <div class="col-md-6 masthead-text">
-        <!-- Post title goes in these h1 tags -->
-        <h1 class="post-title"></h1>
-        <!-- Post author goes before the | the post's created date goes after -->
-        <p class="post-subtitle">|</p>
+        <!-- recipe title goes in these h1 tags -->
+        <h1 class="recipe-title"></h1>
+        <!-- recipe author goes before the | the recipe's created date goes after -->
+        <p class="recipe-subtitle">|</p>
       </div>
       <div class="d-none d-md-block col-md-6 masthead-image">
         <!-- The featured image URL goes in the src attribute -->
-        {% if "placeholder" in post.featured_image.url %}
+        {% if "placeholder" in recipe.featured_image.url %}
         <img
           src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg"
           width="100%"
@@ -28,7 +28,7 @@
   <div class="row">
     <div class="col card mb-4 mt-3 left top">
       <div class="card-body">
-        <!-- The post content goes inside the card-text. -->
+        <!-- The recipe content goes inside the card-text. -->
         <!-- Use the | safe filter inside the template tags -->
         <p class="card-text"></p>
         <div class="row">
@@ -56,7 +56,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8 card mb-4 mt-3">
+    <div class="col card mb-4 mt-3">
       <h3>Comments:</h3>
       <div class="card-body">
         <!-- We want a for loop inside the tags to iterate through each comment in comments -->
@@ -78,7 +78,7 @@
         {% %}
       </div>
     </div>
-    <div class="col-md-4 card mb-4 mt-3">
+    <div class="col-md-8 card mb-4 mt-3">
       <div class="card-body">
         <!-- For later -->
       </div>
