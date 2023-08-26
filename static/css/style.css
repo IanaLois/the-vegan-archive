@@ -20,3 +20,39 @@ p {
     font-size: 1.4em;
     font-weight: 700;
 }
+
+/*---------------------------------------- Navigation Bar --------------------*/
+.custom-navbar-bg {
+    background-color: #1C7866;
+}
+
+a {
+    color: #F4F0BB;
+    font-weight: 700;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    transition: color 0.5s;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+li a {
+    font-size: 1.2em;
+}
+
+.nav-link {
+    color: #F4F0BB;
+    transition: color 0.5s;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.navbar {
+    padding: 0.5rem 0.3rem;
+}
