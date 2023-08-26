@@ -108,7 +108,8 @@ li a {
     border-radius: 0.2rem;
 }
 
-.carousel {
+.carousel,
+.bottom-img {
     box-shadow: 10px 15px 1px #1C7866;
     border-radius: 0.2rem;
 }
@@ -151,4 +152,21 @@ li a {
 .order-md-2 {
     margin: auto;
     text-align: center;
+}
+
+/*---------------------------------------------- About Us --------------------*/
+.about-text {
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #1C7866;
+    line-height: 1.6;
+}
+
+.about-text h2 {
+    color: #1C7866;
+    text-shadow: 1px 1px 1px #000;
+    text-decoration: underline;
 }
