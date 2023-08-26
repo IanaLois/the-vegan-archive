@@ -32,8 +32,9 @@ a {
 }
 
 .navbar-brand {
-    font-size: 2em;
+    font-size: 1.8em;
     transition: color 0.5s;
+    margin-left: 1.5rem;
 }
 
 .navbar-brand:hover {
@@ -42,6 +43,7 @@ a {
 
 li a {
     font-size: 1.2em;
+    margin-right: 1.5rem;
 }
 
 .nav-link {
@@ -54,5 +56,33 @@ li a {
 }
 
 .navbar {
-    padding: 0.5rem 0.3rem;
+    padding: 1rem 0rem;
+    justify-content: center;
+}
+
+/*----------------------------------------- Dropdown Menu --------------------*/
+.dropdown-menu {
+    background-color: #fff;
+    transition: color 0.4s;
+    margin-right: 1rem;
+}
+
+.dropdown-item:hover {
+    background-color: #1C7866;
+    color: #F4F0BB;
+}
+
+.dropdown-item {
+    color: #1C7866;
+    transition: color 0.4s;
+}
+
+.dropdown-logout {
+    color: #ff0000;
+    transition: color 0.4s;
+}
+
+.dropdown-logout:hover {
+    background-color: #ff0000;
+    color: #fff;
 }
