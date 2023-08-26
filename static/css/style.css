@@ -86,3 +86,17 @@ li a {
     background-color: #ff0000;
     color: #fff;
 }
+
+/*------------------------------------------------ Footer --------------------*/
+.footer {
+    background-color: #1C7866;
+    color: #F4F0BB;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.footer p {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 1.1em;
+}
