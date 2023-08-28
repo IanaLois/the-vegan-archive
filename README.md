@@ -95,3 +95,161 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 - [DrawSQL](https://drawsql.app/diagrams) was used to design the database diagram.
 - [Balsamiq](https://balsamiq.com/) was used to create the wireframes.
 - Project images were sourced from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.com/).
+
+### **Database**
+
+<details>
+<summary>Database Diagram</summary>
+
+<br>
+
+<img src="media/tva-database-diagram.png" alt="Database Diagram" width="65%" height="65%">
+
+</details>
+
+<br>
+
+### **Wireframes**
+
+<details>
+<summary>Homepage</summary>
+
+<br>
+
+<img src="media/wireframes/homepage.png" alt="Homepage" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>Directory Page</summary>
+
+<br>
+
+<img src="media/wireframes/directory.png" alt="Directory" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>Recipe Layout</summary>
+
+<br>
+
+<img src="media/wireframes/recipe-layout.png" alt="Recipe Layout" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>Login Page</summary>
+
+<br>
+
+<img src="media/wireframes/login.png" alt="Login" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>Sign-up Page</summary>
+
+<br>
+
+<img src="media/wireframes/sign-up.png" alt="Sign-up" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>Password Reset Page</summary>
+
+<br>
+
+<img src="media/wireframes/password-reset.png" alt="Password Reset" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>Login Alert</summary>
+
+<br>
+
+<img src="media/wireframes/login-alert.png" alt="Login Alert" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>User Dropdown</summary>
+
+<br>
+
+<img src="media/wireframes/dropdown.png" alt="Dropdown" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>User Profile Page</summary>
+
+<br>
+
+<img src="media/wireframes/user-profile.png" alt="User Profile" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>Likes Page</summary>
+
+<br>
+
+<img src="media/wireframes/likes.png" alt="Likes" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>Submissions Page</summary>
+
+<br>
+
+<img src="media/wireframes/submissions.png" alt="Submissions" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>Submission Draft Page</summary>
+
+<br>
+
+<img src="media/wireframes/submission-draft.png" alt="Submission Draft" width="60%" height="60%">
+
+</details>
+
+<br>
+
+<details>
+<summary>Logout Alert</summary>
+
+<br>
+
+<img src="media/wireframes/logout-alert.png" alt="Logout Alert" width="60%" height="60%">
+
+</details>
+
+<br>
