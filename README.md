@@ -261,3 +261,57 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 </details>
 
 <br>
+
+<hr>
+
+## **FEATURES**
+
+### **Full Home Page**
+
+<img src="media/website/website-preview.png" alt="Website Preview" width="65%" height="65%">
+
+### **Navigation Bar**
+
+<img src="media/website/nav-bar.png" alt="Navigation Bar" width="100%" height="100%">
+
+<br>
+
+- Positioned at the top with a "sticky" attribute for easy access while scrolling.
+- Offers links to key sections: Home, About, Directory, Login, and Sign-up.
+- Provides quick return to the main landing page with the "Home" link.
+
+### **User Dropdown**
+
+<img src="media/website/user-dropdown.png" alt="User Dropdown" width="20%" height="20%">
+
+<br>
+
+- Offers a clear and concise display of options available to registered users: View Profile, Likes, Submissions, and a distinct red "Logout" link.
+
+### **Carousel and Intro Text**
+
+<img src="media/website/carousel-and-intro-text.png" alt="Carousel and Intro Text" width="80%" height="80%">
+
+<br>
+
+- Features a dynamic carousel showcasing a variety of enticing vegan dishes.
+- Welcomes users with a captivating and friendly message.
+- Incorporates an eye-catching button beneath the text.
+
+### **About us**
+
+<img src="media/website/about-with-img.png" alt="About Us Section" width="80%" height="80%">
+
+<br>
+
+- Presents essential details about the platform's purpose and values.
+- Image showcases a joyful and engaging atmosphere.
+- Symbolizes the spirit of community and collaboration around vegan cooking.
+
+### **Footer**
+
+<img src="media/website/footer.png" alt="Footer" width="100%" height="100%">
+
+<br>
+
+- Showcases a straightforward copyright notice.
