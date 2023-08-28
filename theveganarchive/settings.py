@@ -32,7 +32,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['theveganarchive.herokuapp.com', 'theveganarchive-1bb23ea6b11f.herokuapp.com',
                  '8000-ianalois-the-vegan-archi-1ttx57nvhi.us2.codeanyapp.com', '8080-ianalois-the-vegan-archi-1ttx57nvhi.us2.codeanyapp.com']
