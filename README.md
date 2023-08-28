@@ -56,3 +56,42 @@ To strategize the project's development and execution, an Agile Tool in the form
 - To serve as a platform for learning and exploring vegan cooking, promoting sustainability, health, and ethical living.
 - To allow users to save, organize, and manage their favorite recipes for easy access.
 - To empower site administrators to manage and oversee all aspects of content, user activity, and interactions.
+
+<hr>
+
+## **DESIGN**
+
+### **Colors**
+
+<details>
+<summary>Color Palette</summary>
+
+<br>
+
+<img src="media/tva-color-palette.png" alt="Color Palette" width="45%" height="45%">
+
+</details>
+
+<br>
+
+The color scheme for this project was obtained from [Coolors](https://coolors.co/).
+It is a combination of earthy and calming tones:
+
+- #f4f0bb has a warm and soft beige tone reminiscent of sandy beaches or natural fibers. This color exudes comfort and relaxation.
+- #1C7866 has a deep and rich green resembling lush vegetation. This color brings a sense of balance and tranquility.
+
+The harmonious interaction of these colors creates a natural connection and a tranquil ambiance, making them suitable for this project that aims to communicate feelings of wellness and unity.
+
+### **Typography**
+
+[Google Fonts](https://fonts.google.com/) was used to generate the font family "Hind" and in the event that it doesn't load, it will default to "sans-serif".
+
+The "Hind" font family was chosen for the entire project because it strikes a good balance between being easy to read, adaptable, and visually pleasing. The clear letter shapes ensure that text is easy to understand. The font comes in different weights, which helps organize headings and text effectively.
+
+Hind's modern yet elegant look matches the project's style well and by using Hind consistently, a cohesive look and feel is created, which makes the project user-friendly and visually appealing.
+
+### **Media**
+
+- [DrawSQL](https://drawsql.app/diagrams) was used to design the database diagram.
+- [Balsamiq](https://balsamiq.com/) was used to create the wireframes.
+- Project images were sourced from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.com/).
