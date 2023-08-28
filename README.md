@@ -38,3 +38,21 @@ Site admin/Superuser:
 ### **Agile Methodology**
 
 To strategize the project's development and execution, an Agile Tool in the form of a project Kanban board was employed via Github. The project board utilized issues represented as 'User Stories'. You can access the board through this [link](https://github.com/users/IanaLois/projects/3).
+
+### **The Scope**
+
+#### **The Site's Main Goals:**
+
+- To provide users with a user-friendly and positive experience when using GT Modellista.
+- To provide users with a clear understanding of the site's purpose.
+- To provide controlled functionality based on a user's permissions.
+- To provide user's with a profile that allows them to manage their own content.
+- To provide users with a user-friendly and intuitive experience while navigating the website.
+- To clearly communicate the purpose and mission of the website to users.
+- To implement controlled access and functionality based on user permissions, ensuring a secure and personalized experience.
+- To offer users the ability to create and manage their own profiles, enabling them to control their content and engagement on the platform.
+- To showcase a diverse range of high-quality vegan recipes and culinary creations.
+- To foster a sense of community and engagement among users, encouraging sharing and interaction.
+- To serve as a platform for learning and exploring vegan cooking, promoting sustainability, health, and ethical living.
+- To allow users to save, organize, and manage their favorite recipes for easy access.
+- To empower site administrators to manage and oversee all aspects of content, user activity, and interactions.
