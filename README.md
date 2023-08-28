@@ -34,3 +34,7 @@ Site admin/Superuser:
 - As admin, I can access the admin dashboard so that I can manage and oversee all aspects of the website's content and user activity.
 - As admin, I can approve or reject recipe submissions before they are published so that I can ensure content quality and adherence to guidelines.
 - As admin, I can edit and update recipes submitted by users so that I can correct any errors, improve formatting, or enhance clarity.
+
+### **Agile Methodology**
+
+To strategize the project's development and execution, an Agile Tool in the form of a project Kanban board was employed via Github. The project board utilized issues represented as 'User Stories'. You can access the board through this [link](https://github.com/users/IanaLois/projects/3).
