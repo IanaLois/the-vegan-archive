@@ -61,8 +61,6 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-
-
 ROOT_URLCONF = 'theveganarchive.urls'
 
 TEMPLATES = [
