@@ -13,8 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 import dj_database_url
 from pathlib import Path
-
-if os.path.isfile("env.py"):
+if os.path.isfile('env.py'):
     import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,13 +25,13 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ("SECRET_KEY","s45@c-g+t0hm5hban0-m8f-=#5#!^z8@crado_zo1i4irnyq^q")
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['theveganarchive.herokuapp.com', 'theveganarchive-1bb23ea6b11f.herokuapp.com',
-                 '8000-ianalois-the-vegan-archi-1ttx57nvhi.us2.codeanyapp.com', '8080-ianalois-the-vegan-archi-1ttx57nvhi.us2.codeanyapp.com']
+                 '8000-ianalois-the-vegan-archi-1ttx57nvhi.us2.codeanyapp.com', '8080-ianalois-the-vegan-archi-1ttx57nvhi.us2.codeanyapp.com', '8000-ianalois-the-vegan-archi-reiglnljqk.us2.codeanyapp.com']
 
 
 # Application definition
@@ -58,7 +57,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
+
+
 
 ROOT_URLCONF = 'theveganarchive.urls'
 
@@ -86,12 +89,12 @@ WSGI_APPLICATION = 'theveganarchive.wsgi.application'
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get("DATABASE_URL")), 
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation

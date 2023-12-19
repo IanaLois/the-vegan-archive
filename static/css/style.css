@@ -35,7 +35,6 @@ a {
     font-size: 1.8em;
     transition: color 0.5s;
     margin-left: 1.5rem;
-    text-shadow: 1px 2px 1px #000;
 }
 
 .navbar-brand:hover {
@@ -50,7 +49,6 @@ li a {
 .nav-link {
     color: #F4F0BB;
     transition: color 0.5s;
-    text-shadow: 1px 2px 1px #000;
 }
 
 .nav-link:hover {
@@ -126,27 +124,21 @@ li a {
     font-size: 3em;
     text-align: center;
     border-radius: 0.2rem;
-    text-shadow: 1px 2px 1px #000;
 }
 
 .intro-text .btn {
     color: #F4F0BB;
-    padding: 0.3rem;
     font-size: 1.2em;
-    text-align: center;
-    border-radius: 0.5rem;
-    border: 3px solid #1C7866;
-    box-shadow: 2px 2px 3px #1C7866;
     background-color: #1C7866;
-    transition: color 0.7s;
-    text-shadow: 1px 2px 1px #000;
+    font-weight: 700;
 }
 
 .intro-text .btn:hover {
     background-color: #F4F0BB;
     color: #1C7866;
     border: 3px solid #1C7866;
-    text-shadow: 1px 2px 1px #F4F0BB;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 .order-md-2 {
@@ -160,13 +152,13 @@ li a {
 }
 
 .about-text p {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #1C7866;
     line-height: 1.6;
+    font-weight: 400;
 }
 
 .about-text h2 {
     color: #1C7866;
-    text-shadow: 1px 1px 1px #000;
     text-decoration: underline;
 }
