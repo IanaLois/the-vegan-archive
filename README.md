@@ -8,6 +8,10 @@
 
 <br>
 
+<hr>
+
+<br>
+
 ## **TABLE OF CONTENTS**
 
 - [**The Vegan Archive**](#the-vegan-archive)
@@ -15,15 +19,14 @@
   - [**INTRODUCTION**](#introduction)
   - [**USER EXPERIENCE (UX)**](#user-experience-ux)
     - [**User Stories**](#user-stories)
-    - [**Agile Methodology**](#agile-methodology)
-    - [**The Scope**](#the-scope)
-      - [**The Site's Main Goals:**](#the-sites-main-goals)
+  - [**AGILE METHODOLOGY**](#agile-methodology)
+  - [**THE SCOPE**](#the-scope)
+    - [**The Site's Main Goals**](#the-sites-main-goals)
   - [**DESIGN**](#design)
-    - [**Colors**](#colors)
+    - [**Colours**](#colours)
     - [**Typography**](#typography)
-    - [**Media**](#media)
-    - [**Database**](#database)
-    - [**Wireframes**](#wireframes)
+  - [**DATABASE SCHEMA**](#database-schema)
+  - [**WIREFRAMES**](#wireframes)
   - [**FEATURES**](#features)
     - [**Full Home Page**](#full-home-page)
     - [**Navigation Bar**](#navigation-bar)
@@ -31,6 +34,15 @@
     - [**Carousel and Intro Text**](#carousel-and-intro-text)
     - [**About us**](#about-us)
     - [**Footer**](#footer)
+  - [**CREDITS**](#credits)
+    - [**Technology used**](#technology-used)
+    - [**Media**](#media)
+
+<br>
+
+<hr>
+
+<br>
 
 ## **INTRODUCTION**
 
@@ -38,7 +50,11 @@ Step into the world of The Vegan Archive where we embrace plant-based cuisine as
 
 Our platform was born from a deep love for plant-based cooking and a vision to unite like-hearted individuals who share a passion for wholesome, flavourful food. Whether you're an experienced vegan chef or embarking on your plant-based journey, The Vegan Archive warmly invites you to uncover, experiment, and broaden your culinary horizons with us. Come join us and celebrate mindful and delicious cooking!
 
+<br>
+
 <hr>
+
+<br>
 
 ## **USER EXPERIENCE (UX)**
 
@@ -73,35 +89,58 @@ Site admin/Superuser:
 - As admin, I can access the admin dashboard so that I can efficiently manage and oversee all aspects of the website's content and user activity and ensuring a seamless and well-monitored platform.
 - As admin, I can approve or reject recipe submissions before they are published so that I can maintain content quality, uphold community guidelines and provide users with a curated and reliable collection of recipes.
 
-### **Agile Methodology**
-
-To strategize the project's development and execution, an Agile Tool in the form of a project Kanban board was employed via Github. The project board utilized issues represented as 'User Stories'. You can access the board through this [link](https://github.com/users/IanaLois/projects/3).
-
-### **The Scope**
-
-#### **The Site's Main Goals:**
-
-- To provide users with a clear understanding of the site's purpose.
-- To provide controlled functionality based on a user's permissions.
-- To provide user's with a profile that allows them to manage their own content.
-- To provide users with a user-friendly and intuitive experience while navigating the website.
-- To clearly communicate the purpose and mission of the website to users.
-- To implement controlled access and functionality based on user permissions, ensuring a secure and personalized experience.
-- To offer users the ability to create and manage their own profiles, enabling them to control their content and engagement on the platform.
-- To showcase a diverse range of high-quality vegan recipes and culinary creations.
-- To foster a sense of community and engagement among users, encouraging sharing and interaction.
-- To serve as a platform for learning and exploring vegan cooking, promoting sustainability, health, and ethical living.
-- To allow users to save, organize, and manage their favorite recipes for easy access.
-- To empower site administrators to manage and oversee all aspects of content, user activity, and interactions.
+<br>
 
 <hr>
 
+<br>
+
+## **AGILE METHODOLOGY**
+
+To strategise the project's development and execution, an Agile Tool in the form of a project Kanban board was employed via Github. The project board utilised issues represented as "User Stories". You can access the board through this [link](https://github.com/users/IanaLois/projects/3).
+
+<br>
+
+<hr>
+
+<br>
+
+## **THE SCOPE**
+
+### **The Site's Main Goals**
+
+1. **Clear Purpose:** Communicate the site's mission to foster a connection with users.
+
+2. **Personalised Experience:** Provide users with tools for efficient content management and personalisation.
+
+3. **User-Friendly Design:** Deliver an intuitive and user-friendly interface for seamless navigation.
+
+4. **Secure Access:** Implement controlled access for a secure and personalised user experience.
+
+5. **Community Building:** Cultivate engagement and encourage users to share culinary experiences.
+
+6. **Diverse Culinary Showcase:** Highlight a variety of top-tier vegan recipes to inspire culinary exploration.
+
+7. **Promoting Values:** Advocate for sustainability, health, and ethical living in vegan cooking.
+
+8. **Efficient Recipe Management:** Facilitate easy saving, organising and management of favourite recipes for users.
+
+9. **Administrative Oversight Tools:** Equip site administrators with powerful tools for effective community management to ensure the continual flourishing of the online community.
+
+<br>
+
+<hr>
+
+<br>
+
 ## **DESIGN**
 
-### **Colors**
+### **Colours**
+
+<br>
 
 <details>
-<summary>Color Palette</summary>
+<summary>Colour Palette</summary>
 
 <br>
 
@@ -111,43 +150,45 @@ To strategize the project's development and execution, an Agile Tool in the form
 
 <br>
 
-The color scheme for this project was obtained from [Coolors](https://coolors.co/).
+The colour scheme for this project was obtained from [Coolors](https://coolors.co/).
 It is a combination of earthy and calming tones:
 
 - #f4f0bb has a warm and soft beige tone reminiscent of sandy beaches or natural fibers. This color exudes comfort and relaxation.
 - #1C7866 has a deep and rich green resembling lush vegetation. This color brings a sense of balance and tranquility.
 
-The harmonious interaction of these colors creates a natural connection and a tranquil ambiance, making them suitable for this project that aims to communicate feelings of wellness and unity.
+The harmonious interaction of these colours creates a natural connection and a tranquil ambiance, making them suitable for this project that aims to communicate feelings of wellness and unity.
+
+<br>
 
 ### **Typography**
 
 [Google Fonts](https://fonts.google.com/) was used to generate the font family "Hind" and in the event that it doesn't load, it will default to "sans-serif".
 
-The "Hind" font family was chosen for the entire project because it strikes a good balance between being easy to read, adaptable, and visually pleasing. The clear letter shapes ensure that text is easy to understand. The font comes in different weights, which helps organize headings and text effectively.
+- The "Hind" font family was chosen for the entire project because it strikes a good balance between being easy to read, adaptable, and visually pleasing. The clear letter shapes ensure that the text is easy to understand. The font comes in different weights which helps organise headings and text effectively.
 
-Hind's modern yet elegant look matches the project's style well and by using Hind consistently, a cohesive look and feel is created, which makes the project user-friendly and visually appealing.
-
-### **Media**
-
-- [DrawSQL](https://drawsql.app/diagrams) was used to design the database diagram.
-- [Balsamiq](https://balsamiq.com/) was used to create the wireframes.
-- [WhiteNoise](https://whitenoise.readthedocs.io/en/latest/index.html) was used to serve the static files.
-- Project images were sourced from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.com/).
-
-### **Database**
-
-<details>
-<summary>Database Diagram</summary>
+Hind's modern yet elegant look matches the project's style well and by using Hind consistently, a cohesive look and feel is created, making the project user-friendly and visually appealing.
 
 <br>
 
-<img src="media/tva-database-diagram.png" alt="Database Diagram" width="65%" height="65%">
-
-</details>
+<hr>
 
 <br>
 
-### **Wireframes**
+## **DATABASE SCHEMA**
+
+<br>
+
+<img src="media/tva-database-diagram.png" alt="Database Diagram" width="45%" height="45%">
+
+<br>
+
+<br>
+
+<hr>
+
+<br>
+
+## **WIREFRAMES**
 
 <details>
 <summary>Homepage</summary>
@@ -294,6 +335,8 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 
 <hr>
 
+<br>
+
 ## **FEATURES**
 
 ### **Full Home Page**
@@ -345,3 +388,22 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 <br>
 
 - Showcases a straightforward copyright notice.
+
+<br>
+
+<hr>
+
+<br>
+
+## **CREDITS**
+
+### **Technology used**
+
+- [Coolers](https://coolors.co/) was used for the project's colour scheme.
+- [Google Fonts](https://fonts.google.com/) was used for the project's text font.
+- [DrawSQL](https://drawsql.app/diagrams) was used to design the database diagram.
+- [Balsamiq](https://balsamiq.com/) was used to create the wireframes.
+- [WhiteNoise](https://whitenoise.readthedocs.io/en/latest/index.html) was used to serve the static files.
+
+### **Media**
+- Project images were sourced from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.com/).
