@@ -81,6 +81,9 @@ TEMPLATES = [
     },
 ]
 
+ACCOUNT_LOGIN_TEMPLATE = 'account/login.html'
+ACCOUNT_SIGNUP_TEMPLATE = 'account/signup.html'
+
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
