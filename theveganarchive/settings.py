@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'recipes',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
