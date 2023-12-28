@@ -40,7 +40,7 @@
     <!-- Static CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
-  <body>
+  <body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg custom-navbar-bg sticky-top">
       <a class="navbar-brand" href="#">
         <i class="fas fa-leaf"></i> The Vegan Archive
@@ -114,12 +114,10 @@
         </ul>
       </div>
     </nav>
-    <main class="flex-shrink-0 main-bg">
-      {% block content %}
-      <!-- Content Goes here -->
-      {% endblock content %}
-    </main>
-    <footer>
+    {% block content %}
+    <!-- Content Goes here -->
+    {% endblock content %}
+    <footer class="mt-auto">
       <div class="footer">
         <p>&copy; Copyright | The Vegan Archive 2023</p>
       </div>
