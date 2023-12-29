@@ -181,7 +181,56 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 
 <br>
 
-<img src="media/drawSQL-the-vegan-archive.png" alt="Database Diagram" width="45%" height="45%">
+<img src="media/drawSQL-the-vegan-archive.png" alt="Database Diagram" width="70%" height="70%">
+
+<br>
+<br>
+
+|       **User**            |                   |                            |
+|:---------------------:|:-----------------:|:--------------------------:|
+|           |      **Field**        |          **Type**              |
+|                       |     username      |        CharField           |
+|                       |       email       |        EmailField          |
+|                       |      password     |        CharField           |
+
+<br>
+
+|       **Profile**          |                   |                            |
+|:----------------------:|:-----------------:|:--------------------------:|
+|            |      **Field**        |          **Type**              |
+|           ForeignKey              |        user       |                 |
+|                         |     full_name     |        CharField           |
+|                         |        bio        |        TextField           |
+|                         |     created_at    |      DateTimeField         |
+|                         |     last_login    |      DateTimeField         |
+|                         |     is_active     |      BooleanField          |
+|                         |      is_admin     |      BooleanField          |
+
+<br>
+
+|        **Recipe**          |                   |                            |
+|:----------------------:|:-----------------:|:--------------------------:|
+|            |      **Field**        |          **Type**              |
+|           ForeignKey              |        user       |                 |
+|                         |        name       |        CharField           |
+|                         |       image       |        CharField           |
+|                         |    description    |        TextField           |
+|                         |      servings     |    IntegerField         |
+|                         |      calories     |    IntegerField         |
+|                         |   cooking_time    |    IntegerField         |
+|                         |    ingredients    |        TextField           |
+|                         |   instructions    |        TextField           |
+|                         |    updated_at     |      DateTimeField         |
+|                         |       status      |        CharField           |
+|                         |   is_published    |      BooleanField          |
+
+<br>
+
+|      **Favourites**        |                   |                            |
+|:----------------------:|:-----------------:|:--------------------------:|
+|            |      **Field**        |          **Type**              |
+|ForeignKey|      user        |                 |
+|            ForeignKey             |      recipe       |                 |
 
 <br>
 
@@ -344,7 +393,7 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 
 ### **Full Home Page**
 
-<img src="media/website/tva-website-full-view.png" alt="Website Preview" width="65%" height="65%">
+<img src="media/website/tva-website-full-view.png" alt="Website Preview" width="85%" height="85%">
 
 ### **Navigation Bar**
 
@@ -442,6 +491,15 @@ The Vegan Archive was created using [Codeanywhere](https://codeanywhere.com/) an
 - Ensure that Django and Gunicorn are installed in your workspace by executing the command ``pip3 install Django==3.2.3`` and ``pip3 install gunicorn==21.2.0``.
 - Similarly, confirm the installation of the database infrastructure by running ``pip3 install dj-database-url==0.5.0`` and ``pip3 install psycopg2==2.9.7``
 - Then ``pip freeze > requirements.txt`` command was used to update the requirements.txt file.
+
+**Setting up Cloudinary**
+
+- Go to the website.
+- Click on the **"Sign Up For Free"** button.
+- Fill in your name, email address, and choose a password.
+- For **Primary interest**, select **"Programmable Media" for image and video API**.
+- Click **"Create Account."**
+- Verify your email, and you will be directed to the dashboard.
 
 **The env.py file**
 
