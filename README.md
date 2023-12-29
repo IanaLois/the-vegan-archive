@@ -34,6 +34,9 @@
     - [**Carousel and Intro Text**](#carousel-and-intro-text)
     - [**About us**](#about-us)
     - [**Footer**](#footer)
+  - [**DEPLOYMENT**](#deployment)
+    - [**Version Control**](#version-control)
+    - [**Heroku Deployment**](#heroku-deployment)
   - [**CREDITS**](#credits)
     - [**Technology used**](#technology-used)
     - [**Media**](#media)
@@ -395,10 +398,104 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 
 <br>
 
+## **DEPLOYMENT**
+
+<br>
+
+### **Version Control**
+
+The Vegan Archive was created using [Codeanywhere](https://codeanywhere.com/) and pushed to [GitHub](https://github.com/).
+
+- ``git status`` command was used to display the status of changes as untracked, modified, or staged in the working directory and staging area.
+
+- ``git add .`` command was used to stage all changes in the working directory and its subdirectories for the next commit.
+
+- ``git commit -m “commit message”`` command was used to create a new commit in the Git repository with a specified commit message.
+
+- ``git push`` command was used to upload local repository content to a remote repository.
+
+<br>
+
+### **Heroku Deployment**
+
+**Requirement and Procfile**
+
+- ``pip3 freeze --local > requirements.txt`` command was used to create a ``requirements.txt`` file.
+- A new file named ``Procfile`` was created and a line of code ``web: gunicorn theveganarchive.wsgi`` was added.
+- Then everything was pushed to the repository.
+
+**Creating the Heroku App**
+
+- Navigate to the Dashboard after logging into [Heroku](https://www.heroku.com/).
+- Select **"New"** and then **"Create new app".**
+- Name the app and then select the closest region.
+- Click **"Create app"** to confirm.
+
+**Creating the Database**
+
+- Navigate to the Dashboard after logging into [ElephantSQL](https://www.elephantsql.com/).
+- Select **"Create New Instance".**
+- Choose the **Tiny Turtle (Free)** plan and **Name** it, leaving the **Tags** section blank.
+- Click **"Select Region"** and select the closest data center.
+- Click **"Review".**
+- If all details are correct, select **"Create instance".**
+- Return to the Dashboard and click on the **database instance name** of the project.
+- In the URL section, copy the database URL.
+- Ensure that Django and Gunicorn are installed in your workspace by executing the command ``pip3 install Django==3.2.3`` and ``pip3 install gunicorn==21.2.0``.
+- Similarly, confirm the installation of the database infrastructure by running ``pip3 install dj-database-url==0.5.0`` and ``pip3 install psycopg2==2.9.7``
+- Then ``pip freeze > requirements.txt`` command was used to update the requirements.txt file.
+
+**The env.py file**
+
+- A ``env.py`` file must be present in the working directory and included in the ``.gitignore`` file.
+- At the top of the ``env.py`` file, add the line of code ``import os``.
+- Below that add the following lines:
+
+  ``os.environ["DATABASE_URL"] = "copied URL from ElephantSQL database"`` <br>
+  ``os.environ["SECRET_KEY"] = "create a secret key of your own or use a random key generator"`` <br>
+  ``os.environ["CLOUD_NAME"] = "from the copied API Environment Variable found in Cloudinary account dashboard, use the characters AFTER @ "`` <br>
+  ``os.environ["API_KEY"] = "from the copied API Environment Variable found in Cloudinary account dashboard, use the characters AFTER CLOUDINARY_URL=cloudinary:// and BEFORE the : "`` <br>
+  ``os.environ["API_SECRET"] = "from the copied API Environment Variable found in Cloudinary account dashboard, use the characters AFTER : and BEFORE @ "`` <br>
+
+- Import the environment variables into the ``settings.py`` file.
+- Then run ``python3 manage.py migrate`` in the terminal window to migrate the data structure to the database instance.
+
+**Heroku Config Vars**
+
+- Navigate to the Heroku Dashboard and select the **"Settings"** tab in the app that was just created.
+- Click **"Reveal Config Vars"**.
+- Add the following: <br>
+
+  ``DATABASE_URL`` - ``copied database URL from ElephantSQL`` <br>
+  ``SECRET_KEY`` - ``copied secret key`` <br>
+  ``CLOUDINARY`` - ``copied API Environment Variable AFTER CLOUDINARY_URL=`` <br>
+  ``DISABLE_COLLECTSTATIC`` - ``1`` <br>
+
+**Connecting to GitHub and Deploy**
+
+- Navigate to the Heroku Dashboard and select the **"Deploy"** tab in the app that was just created.
+- Choose GitHub as the preferred deployment method.
+- Locate the project repository by name and click **"Connect"** to establish the connection.
+- Select **"Enable Automatic Deploys"** if desired.
+- Lastly, select **"Deploy Branch"** to initiate the deployment process and observe the app being built.
+
+<br>
+
+<hr>
+
+<br>
+
 ## **CREDITS**
 
 ### **Technology used**
 
+- [Codeanywhere](https://codeanywhere.com/) was used for creating the full project in a cross-platform cloud IDE.
+- [Git](https://git-scm.com/) was used for version control in the project.
+- [GitHub](https://github.com/) was used for hosting and collaborating on the Git repositories created with Codeanywhere and Git.
+- [Heroku](https://www.heroku.com/) was used for deploying, scaling, and managing applications in the cloud.
+- [ElephantSQL](https://www.elephantsql.com/) was used for managing PostgreSQL databases in the cloud.
+- [miniWebtool](https://miniwebtool.com/django-secret-key-generator/) was used to generate a random secret key.
+- [Cloudinary](https://cloudinary.com/) was used for managing and optimising media assets in the cloud.
 - [Coolers](https://coolors.co/) was used for the project's colour scheme.
 - [Google Fonts](https://fonts.google.com/) was used for the project's text font.
 - [DrawSQL](https://drawsql.app/diagrams) was used to design the database diagram.
