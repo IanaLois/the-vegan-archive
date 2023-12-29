@@ -128,15 +128,22 @@ li a {
 
 .carousel,
 .bottom-img {
-    box-shadow: 10px 15px 1px #1C7866;
+    box-shadow: 7px 10px 1px #1C7866;
     border-radius: 0.2rem;
 }
 
 /*---------------------------------------------------------------- Intro Text */
 
-.bd-example,
+.bd-example {
+    padding: 1rem;
+}
+
 .intro-text {
     padding: 1rem;
+    background-color: rgb(255 252 218);
+    box-shadow: 7px 10px 1px #1C7866;
+    border-radius: 0.2rem;
+    margin-top: 3rem;
 }
 
 .intro-text h1 {
@@ -167,6 +174,10 @@ li a {
 
 .about-text {
     text-align: center;
+    padding: 2rem;
+    background-color: rgb(255 252 218);
+    box-shadow: 7px 10px 1px #1C7866;
+    border-radius: 0.2rem;
 }
 
 .about-text p {
@@ -213,6 +224,7 @@ li a {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 421px;
+    border-radius: 0.2rem;
 }
 
 /*-------------------------------------------------------------- Sign up Page */
@@ -224,6 +236,7 @@ li a {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 568px;
+    border-radius: 0.2rem;
 }
 
 .signup-background-container {
@@ -242,6 +255,7 @@ li a {
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 593px;
+    border-radius: 0.2rem;
 }
 
 .pass-reset-background-container {
