@@ -400,8 +400,6 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 
 ## **DEPLOYMENT**
 
-<br>
-
 ### **Version Control**
 
 The Vegan Archive was created using [Codeanywhere](https://codeanywhere.com/) and pushed to [GitHub](https://github.com/).
@@ -504,3 +502,5 @@ The Vegan Archive was created using [Codeanywhere](https://codeanywhere.com/) an
 
 ### **Media**
 - Project images were sourced from [Pexels](https://www.pexels.com/) and [Freepik](https://www.freepik.com/).
+
+Back to [top](#table-of-contents)<hr>
