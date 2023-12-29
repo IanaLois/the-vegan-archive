@@ -3,7 +3,7 @@
 <br>
 
 <div style="text-align:center">
-<img src="media/website/logo.png" alt="The Vegan Archive Logo" width="45%" height="45%">
+<img src="media/website/tva-logo.png" alt="The Vegan Archive Logo" width="45%" height="45%">
 </div>
 
 <br>
@@ -181,7 +181,7 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 
 <br>
 
-<img src="media/tva-database-diagram.png" alt="Database Diagram" width="45%" height="45%">
+<img src="media/drawSQL-the-vegan-archive.png" alt="Database Diagram" width="45%" height="45%">
 
 <br>
 
@@ -344,21 +344,21 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 
 ### **Full Home Page**
 
-<img src="media/website/website-preview.png" alt="Website Preview" width="65%" height="65%">
+<img src="media/website/tva-website-full-view.png" alt="Website Preview" width="65%" height="65%">
 
 ### **Navigation Bar**
 
-<img src="media/website/nav-bar.png" alt="Navigation Bar" width="100%" height="100%">
+<img src="media/website/tva-nav-bar.png" alt="Navigation Bar" width="100%" height="100%">
 
 <br>
 
 - Positioned at the top with a "sticky" attribute for easy access while scrolling.
-- Offers links to key sections: Home, About, Directory, Login, and Sign-up.
-- Provides quick return to the main landing page with the "Home" link.
+- Offers links to key sections: Home, Directory, Login, and Sign-up.
+- Provides quick return to the main landing page by clicking the main logo or "Home" link.
 
 ### **User Dropdown**
 
-<img src="media/website/user-dropdown.png" alt="User Dropdown" width="20%" height="20%">
+<img src="media/website/tva-user-dropdownmenu.png" alt="User Dropdown" width="20%" height="20%">
 
 <br>
 
@@ -366,7 +366,7 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 
 ### **Carousel and Intro Text**
 
-<img src="media/website/carousel-and-intro-text.png" alt="Carousel and Intro Text" width="80%" height="80%">
+<img src="media/website/tva-carousel-introtext.png" alt="Carousel and Intro Text" width="80%" height="80%">
 
 <br>
 
@@ -376,17 +376,17 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 
 ### **About us**
 
-<img src="media/website/about-with-img.png" alt="About Us Section" width="80%" height="80%">
+<img src="media/website/tva-aboutus.png" alt="About Us Section" width="80%" height="80%">
 
 <br>
 
 - Presents essential details about the platform's purpose and values.
 - Image showcases a joyful and engaging atmosphere.
-- Symbolizes the spirit of community and collaboration around vegan cooking.
+- Symbolises the spirit of community and collaboration around vegan cooking.
 
 ### **Footer**
 
-<img src="media/website/footer.png" alt="Footer" width="100%" height="100%">
+<img src="media/website/tva-footer.png" alt="Footer" width="100%" height="100%">
 
 <br>
 
