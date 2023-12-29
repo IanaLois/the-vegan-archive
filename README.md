@@ -198,7 +198,7 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 |       **Profile**          |                   |                            |
 |:----------------------:|:-----------------:|:--------------------------:|
 |            |      **Field**        |          **Type**              |
-|           ForeignKey              |        user       |                 |
+|           OneToOneField              |        user       |                 |
 |                         |     full_name     |        CharField           |
 |                         |        bio        |        TextField           |
 |                         |     created_at    |      DateTimeField         |
@@ -212,21 +212,23 @@ Hind's modern yet elegant look matches the project's style well and by using Hin
 |:----------------------:|:-----------------:|:--------------------------:|
 |            |      **Field**        |          **Type**              |
 |           ForeignKey              |        user       |                 |
-|                         |        name       |        CharField           |
-|                         |       image       |        CharField           |
+|                         |       title       |        CharField           |
+|                         |       image       |        CloudinaryField           |
 |                         |    description    |        TextField           |
-|                         |      servings     |    IntegerField         |
-|                         |      calories     |    IntegerField         |
-|                         |   cooking_time    |    IntegerField         |
+|                         |      servings     |    PositiveIntegerField         |
+|                         |      calories     |    PositiveIntegerField         |
+|                         |   cooking_time    |    PositiveIntegerField         |
 |                         |    ingredients    |        TextField           |
 |                         |   instructions    |        TextField           |
+|                         |    created_at     |      DateTimeField         |
 |                         |    updated_at     |      DateTimeField         |
-|                         |       status      |        CharField           |
-|                         |   is_published    |      BooleanField          |
+|                         |       status      |        IntegerField           |
+|                         |   is_approved    |      BooleanField          |
+|           ManyToManyField              |   likes    |                |
 
 <br>
 
-|      **Favourites**        |                   |                            |
+|      **Likes**        |                   |                            |
 |:----------------------:|:-----------------:|:--------------------------:|
 |            |      **Field**        |          **Type**              |
 |ForeignKey|      user        |                 |
