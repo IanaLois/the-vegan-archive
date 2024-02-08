@@ -1,1 +1,1 @@
-web: gunicorn theveganarchive.wsgi
+web gunicorn theveganarchive.wsgi
