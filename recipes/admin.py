@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Recipe, Like, Profile
+from .models import Recipe, Profile, Like
 from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Recipe)

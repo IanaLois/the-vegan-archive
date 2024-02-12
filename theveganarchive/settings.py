@@ -30,7 +30,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ianalois-the-vegan-archi-jnx1d6xhxe.us2.codeanyapp.com', '8000-ianalois-the-vegan-archi-jnx1d6xhxe.us2.codeanyapp.com']
+ALLOWED_HOSTS = [
+    '8000-ianalois-the-vegan-archi-jnx1d6xhxe.us2.codeanyapp.com',
+    '8000-ianalois-the-vegan-archi-jnx1d6xhxe.us2.codeanyapp.com',
+    'theveganarchive-1bb23ea6b11f.herokuapp.com',
+]
 
 ALLOWED_ORIGINS = ['http://*', 'https://*']
 CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()
