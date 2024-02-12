@@ -12,3 +12,18 @@ class RecipeAdmin(SummernoteModelAdmin):
 
     def approve_recipes(self, request, queryset):
         queryset.update(is_approved=True)
+
+@admin.register(Profile)
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'full_name', 'bio', 'created_at', 'last_login', 'is_active', 'is_admin')
+    list_filter = ('is_active', 'is_admin')
+    search_fields = ['user__username', 'full_name']
+    readonly_fields = ('created_at', 'last_login')
+
+@admin.register(Like)
+class LikeAdmin(admin.ModelAdmin):
+    list_display = ('user', 'recipe', 'created_at')
+    list_filter = ('created_at',)
+    search_fields = ['user__username', 'recipe__title']
+    readonly_fields = ('created_at',)
+
