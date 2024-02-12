@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['theveganarchive-1bb23ea6b11f.herokuapp.com', '8000-ianalois-the-vegan-archi-1ttx57nvhi.us2.codeanyapp.com', '8080-ianalois-the-vegan-archi-1ttx57nvhi.us2.codeanyapp.com', '8000-ianalois-the-vegan-archi-reiglnljqk.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['theveganarchive-1bb23ea6b11f.herokuapp.com', '8000-ianalois-the-vegan-archi-jnx1d6xhxe.us2.codeanyapp.com']
 
 
 # Application definition
@@ -130,13 +130,6 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_L10N = True
-
-USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
