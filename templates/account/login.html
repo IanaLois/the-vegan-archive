@@ -6,6 +6,7 @@
       <div class="col-md-6 p-4 login_form">
         <h1 class="text-center"><u>Login</u></h1>
         <form method="post" action="/accounts/login/">
+        {% csrf_token %}
           <p>
             <label for="id_login">Username</label>
             <br />
@@ -36,13 +37,18 @@
             <input type="checkbox" name="remember" id="id_remember" />
             <br />
             <span>
-              <a class="form_pass_reset" href="{% url 'account_reset_password' %}"
+              <a
+                class="form_pass_reset"
+                href="{% url 'account_reset_password' %}"
                 ><u>Forgot Password?</u></a
               >
             </span>
           </p>
           <p>
-            Don't have an account? Sign-up <a href="{% url 'account_signup' %}" class="sign_up_here"><u>here.</u></a>
+            Don't have an account? Sign-up
+            <a href="{% url 'account_signup' %}" class="sign_up_here"
+              ><u>here.</u></a
+            >
           </p>
           <button type="submit" class="btn login_btn text-uppercase">
             Log In
