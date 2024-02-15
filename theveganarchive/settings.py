@@ -90,6 +90,8 @@ TEMPLATES = [
 ACCOUNT_LOGIN_TEMPLATE = 'account/login.html'
 ACCOUNT_SIGNUP_TEMPLATE = 'account/signup.html'
 ACCOUNT_PASSWORD_RESET_TEMPLATE = 'account/password_reset.html'
+ACCOUNT_SIGNUP_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "/"
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
