@@ -293,3 +293,38 @@ li a {
 .directory-min-height {
     min-height: 90vh;
 }
+
+.card-body a:hover {
+    color: #F4F0BB;
+}
+
+/*-------------------------------------------------------- Recipe Detail Page */
+
+.card-detail {
+    max-width: 32rem;
+    margin: auto;
+}
+
+.card-body {
+    background-color: #fff;
+}
+
+/*-------------------------------------------------------- Media Queries */
+
+@media (max-width: 576px) {
+    .card-detail {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .card-detail {
+        max-width: 25rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .card-detail {
+        max-width: 32rem;
+    }
+}

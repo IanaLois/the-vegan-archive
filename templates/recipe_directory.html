@@ -16,10 +16,10 @@
                             <p class="author">Author: {{ recipe.user }}</p>
                         </div>
                     </div>
-                    <a href="#" class="recipe-link">
+                    <a href="{% url 'recipe_detail' recipe.pk %}" class="recipe-link">
                         <h2 class="card-title">{{ recipe.title }}</h2>
                     </a>
-                    <p class="card-text-desc">{{ recipe.description|striptags }}</p>
+                    <p class="card-text-desc">"{{ recipe.description|striptags }}"</p>
                     <div class="card-text-horizontal">
                         <p class="card-text"><i class="fa-solid fa-utensils"></i> {{ recipe.servings }}</p>
                         <p class="card-text"><i class="fa-solid fa-fire"></i> {{ recipe.calories }}</p>
