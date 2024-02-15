@@ -32,7 +32,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-ianalois-the-vegan-archi-jnx1d6xhxe.us2.codeanyapp.com',
-    '8000-ianalois-the-vegan-archi-jnx1d6xhxe.us2.codeanyapp.com',
+    '8001-ianalois-the-vegan-archi-jnx1d6xhxe.us2.codeanyapp.com',
+    '8002-ianalois-the-vegan-archi-jnx1d6xhxe.us2.codeanyapp.com',
     'theveganarchive-1bb23ea6b11f.herokuapp.com',
 ]
 

@@ -10,7 +10,7 @@ APPROVAL_STATUS = ((False, "Pending Approval"), (True, "Approved"))
 class Recipe(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='recipe')
     title = models.CharField(max_length=200, unique=True, blank=False)
-    image = CloudinaryField('image', 'recipe_placeholder', null=True)
+    image = CloudinaryField('image', null=True)
     description = models.TextField(blank=False)
     servings = models.PositiveIntegerField(blank=False)
     calories = models.PositiveIntegerField(blank=False)

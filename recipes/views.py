@@ -11,6 +11,12 @@ class RecipeList(generic.ListView):
     template_name = 'index.html'
     paginate_by = 3
 
+class RecipeDirectoryView(generic.ListView):
+    model = Recipe
+    queryset = Recipe.objects.filter(status=1, is_approved=True).order_by("-created_at")
+    template_name = 'recipe_directory.html'
+    paginate_by = 3
+
 class ObjectUpdateView(LoginRequiredMixin, UserIsObjectOwnerMixin, UpdateView):
     model = Recipe
     fields = ['field1', 'field2']

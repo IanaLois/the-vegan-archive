@@ -264,3 +264,32 @@ li a {
     overflow: hidden;
     min-height: 123vh;
 }
+
+/*-------------------------------------------------------- Recipe Card Layout */
+
+.author {
+    padding: 0.5rem;
+    background-color: rgb(255 252 218);
+    box-shadow: -5px 6px 1px #1C7866;
+    margin-top: 1rem;
+    color: #1C7866;
+}
+
+.card-title {
+    color: #1C7866;
+}
+
+.card-text-desc {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.card-text-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.directory-min-height {
+    min-height: 90vh;
+}
