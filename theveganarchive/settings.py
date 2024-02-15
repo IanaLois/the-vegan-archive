@@ -38,6 +38,8 @@ ALLOWED_HOSTS = [
     'theveganarchive-1bb23ea6b11f.herokuapp.com',
 ]
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 ALLOWED_ORIGINS = ['http://*', 'https://*']
 CSRF_TRUSTED_ORIGINS = ALLOWED_ORIGINS.copy()
 

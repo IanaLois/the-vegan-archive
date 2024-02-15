@@ -44,17 +44,17 @@ class RecipeLike(View):
             recipe.likes.add(request.user)
         return HttpResponseRedirect(reverse('recipe_detail', args=[id]))
 
-class ObjectUpdateView(LoginRequiredMixin, UserIsObjectOwnerMixin, UpdateView):
-    model = Recipe
-    fields = ['field1', 'field2']
-
-class ObjectDeleteView(LoginRequiredMixin, UserIsObjectOwnerMixin, DeleteView):
-    model = Recipe
-
-class ObjectCreateView(LoginRequiredMixin, CreateView):
+class RecipeCreate(LoginRequiredMixin, CreateView):
     model = Recipe
     fields = ['field1', 'field2']
 
     def form_valid(self, form):
         form.instance.owner = self.request.user
         return super().form_valid(form)
+
+class RecipeUpdate(LoginRequiredMixin, UserIsObjectOwnerMixin, UpdateView):
+    model = Recipe
+    fields = ['field1', 'field2']
+
+class RecipeDelete(LoginRequiredMixin, UserIsObjectOwnerMixin, DeleteView):
+    model = Recipe
