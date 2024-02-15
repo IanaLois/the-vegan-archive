@@ -268,15 +268,29 @@ li a {
 /*-------------------------------------------------------- Recipe Card Layout */
 
 .author {
+    margin-top: 1.3rem;
+}
+
+.card-title {
     padding: 0.5rem;
     background-color: rgb(255 252 218);
     box-shadow: -5px 6px 1px #1C7866;
     margin-top: 1rem;
     color: #1C7866;
+    transition: all 0.3s ease;
 }
 
-.card-title {
-    color: #1C7866;
+.recipe-link {
+    text-decoration: none;
+}
+
+.recipe-link:hover h2.card-title {
+    padding: 0.5rem;
+    background-color: #1C7866;
+    box-shadow: -5px 6px 1px rgb(255 252 218);
+    margin-top: 1rem;
+    color: rgb(255 252 218);
+    text-decoration: none;
 }
 
 .card-text-desc {
@@ -307,6 +321,24 @@ li a {
 
 .card-body {
     background-color: #fff;
+}
+
+.heart-icon {
+    color: #ff0000;
+    font-size: 1.4em;
+}
+
+.btn-like {
+    color: #ff0000;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #ff0000;
+    background: transparent;
+    border: none;
 }
 
 /*-------------------------------------------------------------- Log out Page */

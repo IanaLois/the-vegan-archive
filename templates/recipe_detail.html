@@ -20,7 +20,18 @@
                         <p class="card-text"><i class="fa-solid fa-utensils"></i> {{ recipe.servings }}</p>
                         <p class="card-text"><i class="fa-solid fa-fire"></i> {{ recipe.calories }}</p>
                         <p class="card-text"><i class="fa-solid fa-clock"></i> {{ recipe.cooking_time }}</p>
-                        <p class="card-text"><i class="fa-solid fa-heart" style="color: #ff0000;"></i> {{ recipe.number_of_likes }}</p>
+                        <form class="d-inline" action="{% url 'recipe_like' recipe.pk %}" method="POST">
+                            {% csrf_token %}
+                            {% if user.is_authenticated %}
+                            {% if liked %}
+                            <button type="submit" class="btn-like"><i class="fa-solid fa-heart heart-icon"></i> {{ recipe.number_of_likes }}</button>
+                            {% else %}
+                            <button type="submit" class="btn-like"><i class="fa-regular fa-heart heart-icon"></i> {{ recipe.number_of_likes }}</button>
+                            {% endif %}
+                            {% else %}
+                            <p><i class="fa-regular fa-heart heart-icon"></i> {{ recipe.number_of_likes }}</p>
+                            {% endif %}
+                        </form>
                     </div>
                     <p class="card-text">Ingredients: {{ recipe.ingredients | safe }}</p>
                     <p class="card-text">Instructions: {{ recipe.instructions | safe }}</p>

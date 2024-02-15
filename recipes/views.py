@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from .models import Recipe
+from django.http import HttpResponseRedirect
+from .models import Recipe, Like
 from django.views.generic import UpdateView, DeleteView, CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from recipes.mixins.is_owner import UserIsObjectOwnerMixin
@@ -33,6 +34,15 @@ class RecipeDetail(View):
                 "liked": liked
             },
         )
+
+class RecipeLike(View):
+    def post(self, request, id, *args, **kwargs):
+        recipe = get_object_or_404(Recipe, pk=id)
+        if recipe.likes.filter(id=request.user.id).exists():
+            recipe.likes.remove(request.user)
+        else:
+            recipe.likes.add(request.user)
+        return HttpResponseRedirect(reverse('recipe_detail', args=[id]))
 
 class ObjectUpdateView(LoginRequiredMixin, UserIsObjectOwnerMixin, UpdateView):
     model = Recipe
