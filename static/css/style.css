@@ -309,7 +309,39 @@ li a {
     background-color: #fff;
 }
 
-/*-------------------------------------------------------- Media Queries */
+/*-------------------------------------------------------------- Log out Page */
+
+.logout_form {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 593px;
+    border-radius: 0.2rem;
+}
+
+.logout-background-container {
+    background: url('https://res.cloudinary.com/didhmaarh/image/upload/v1703778011/qadm79viljkkacwx4ww6.jpg') center center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+    min-height: 84vh;
+}
+
+.logout_btn {
+    color: #fff;
+    font-size: 1.2em;
+    background-color: #ff0000;
+    font-weight: 700;
+    width: 8rem;
+}
+
+.logout-btns {
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+/*---------------------------------------0--------------------- Media Queries */
 
 @media (max-width: 576px) {
     .card-detail {

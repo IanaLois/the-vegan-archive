@@ -49,14 +49,19 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
     'recipes',
-    'allauth',
-    'allauth.account',
 ]
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -89,10 +94,12 @@ TEMPLATES = [
 ]
 
 ACCOUNT_LOGIN_TEMPLATE = 'account/login.html'
+ACCOUNT_LOGOUT_TEMPLATE = 'account/logout.html'
 ACCOUNT_SIGNUP_TEMPLATE = 'account/signup.html'
 ACCOUNT_PASSWORD_RESET_TEMPLATE = 'account/password_reset.html'
 ACCOUNT_SIGNUP_REDIRECT_URL = "/"
 LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',

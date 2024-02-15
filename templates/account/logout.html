@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container mw-100">
+  <div class="row">
+    <div class="col-md-12 p-0 logout-background-container">
+      <div class="col-md-6 p-4 logout_form">
+        <h1 class="text-center"><u>Logout</u></h1>
+        <p>Are you sure you want to log out?</p>
+        <p>Logging out will end your current session.</p>
+        <form
+          method="post"
+          action="/accounts/logout/"
+          class="d-flex justify-content-center"
+        >
+          {% csrf_token %}
+          <div
+            class="logout-btns d-flex"
+            role="group"
+            aria-label="Button group"
+          >
+            <button type="submit" class="btn logout_btn text-uppercase">
+              Yes
+            </button>
+            <button type="button" class="btn login_btn text-uppercase ml-5">
+              <a class="nav-link" href="{% url 'home' %}">Back to home page</a>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
